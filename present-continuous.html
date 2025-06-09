@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Present Continuous</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <aside class="sidebar">
-    <h2>Capítulos</h2>
-    <nav>
-      <ul>
-        <li><a href="present-simple.html">Present Simple</a></li>
-        <li><a href="present-continuous.html">Present Continuous</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <main class="content">
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <h1>Present Continuous</h1>
-    <p>O <strong>Present Continuous</strong> é usado para ações que estão acontecendo agora ou em andamento.</p>
-    <h3>Exemplos:</h3>
-    <ul>
-      <li>I am studying now. <button onclick="speak('I am studying now.')">🔊</button></li>
-      <li>She is watching TV. <button onclick="speak('She is watching TV.')">🔊</button></li>
-    </ul>
-    <h3>Exercícios</h3>
-    <ol>
-      <li>He _____ (study) for the test. <input id="answer-11"><button onclick="checkAnswer(11, 'is studying')">Verificar</button><p id="feedback-11"></p></li>
-      <li>I _____ (read) a book. <input id="answer-12"><button onclick="checkAnswer(12, 'am reading')">Verificar</button><p id="feedback-12"></p></li>
-    </ol>
-  </main>
-</div>
-<script src="script.js"></script>
+  </header>
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="present-simple.html">Present Simple</a></li>
+<li><a href="present-continuous.html">Present Continuous</a></li>
+<li><a href="present-perfect.html">Present Perfect</a></li>
+<li><a href="present-perfect-continuous.html">Present Perfect Continuous</a></li>
+<li><a href="past-simple.html">Past Simple</a></li>
+<li><a href="past-continuous.html">Past Continuous</a></li>
+<li><a href="past-perfect.html">Past Perfect</a></li>
+<li><a href="past-perfect-continuous.html">Past Perfect Continuous</a></li>
+<li><a href="future-simple.html">Future Simple</a></li>
+<li><a href="future-continuous.html">Future Continuous</a></li>
+<li><a href="future-perfect.html">Future Perfect</a></li>
+<li><a href="future-perfect-continuous.html">Future Perfect Continuous</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <section>
+        <h2>Explanation</h2>
+        <p>This tense is used to... [detailed explanation goes here]</p>
+        <h3>Examples:</h3>
+        <ul>
+          <li>Example sentence 1 <button onclick="speak('Example sentence 1')">🔊</button></li>
+          <li>Example sentence 2 <button onclick="speak('Example sentence 2')">🔊</button></li>
+        </ul>
+        <h3>Exercises</h3>
+        <ol>
+          <li>Sentence 1 ____ (verb). <input id="answer-1"><button onclick="checkAnswer(1, 'answer')">Check</button><p id="feedback-1"></p></li>
+<li>Sentence 2 ____ (verb). <input id="answer-2"><button onclick="checkAnswer(2, 'answer')">Check</button><p id="feedback-2"></p></li>
+<li>Sentence 3 ____ (verb). <input id="answer-3"><button onclick="checkAnswer(3, 'answer')">Check</button><p id="feedback-3"></p></li>
+<li>Sentence 4 ____ (verb). <input id="answer-4"><button onclick="checkAnswer(4, 'answer')">Check</button><p id="feedback-4"></p></li>
+<li>Sentence 5 ____ (verb). <input id="answer-5"><button onclick="checkAnswer(5, 'answer')">Check</button><p id="feedback-5"></p></li>
+<li>Sentence 6 ____ (verb). <input id="answer-6"><button onclick="checkAnswer(6, 'answer')">Check</button><p id="feedback-6"></p></li>
+<li>Sentence 7 ____ (verb). <input id="answer-7"><button onclick="checkAnswer(7, 'answer')">Check</button><p id="feedback-7"></p></li>
+<li>Sentence 8 ____ (verb). <input id="answer-8"><button onclick="checkAnswer(8, 'answer')">Check</button><p id="feedback-8"></p></li>
+<li>Sentence 9 ____ (verb). <input id="answer-9"><button onclick="checkAnswer(9, 'answer')">Check</button><p id="feedback-9"></p></li>
+<li>Sentence 10 ____ (verb). <input id="answer-10"><button onclick="checkAnswer(10, 'answer')">Check</button><p id="feedback-10"></p></li>
+        </ol>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

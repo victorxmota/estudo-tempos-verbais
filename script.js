@@ -1,21 +1,19 @@
-
 function speak(text) {
     const msg = new SpeechSynthesisUtterance();
     msg.text = text;
-    msg.lang = 'en-GB';  // voz britânica
+    msg.lang = 'en-GB';
     window.speechSynthesis.speak(msg);
 }
 
-function checkAnswer() {
-    const userInput = document.getElementById('userAnswer').value.trim().toLowerCase();
-    const correctAnswer = "goes";
-    const feedback = document.getElementById('feedback');
+function checkAnswer(id, correctAnswer) {
+    const userInput = document.getElementById('answer-' + id).value.trim().toLowerCase();
+    const feedback = document.getElementById('feedback-' + id);
 
-    if (userInput === correctAnswer) {
-        feedback.textContent = "✅ Correto! 'He goes to the gym every day.'";
+    if (userInput === correctAnswer.toLowerCase()) {
+        feedback.textContent = "✅ Correto!";
         feedback.style.color = "green";
     } else {
-        feedback.textContent = "❌ Tente novamente. A resposta correta é: goes.";
+        feedback.textContent = "❌ A resposta correta é: " + correctAnswer;
         feedback.style.color = "red";
     }
 }

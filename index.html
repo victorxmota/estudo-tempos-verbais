@@ -1,25 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Estudo dos Tempos Verbais</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Present Simple</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2>Capítulos</h2>
-      <nav>
-        <ul>
-          <li><a href="present-simple.html">Present Simple</a></li>
-          <li><a href="present-continuous.html">Present Continuous</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main class="content">
-      <h1>Bem-vindo ao Estudo dos Tempos Verbais</h1>
-      <p>Escolha um capítulo no menu à esquerda para começar seus estudos de inglês britânico.</p>
-    </main>
-  </div>
+  <header>
+    <h1>Present Simple</h1>
+  </header>
+  <main>
+    <section class="explanation">
+      <h2>Explanation</h2>
+      <p>The Present Simple is used for habitual actions, general truths, and fixed arrangements.</p>
+      <ul>
+        <li><strong>Affirmative:</strong> Subject + base verb (+ s/es for he/she/it)</li>
+        <li><strong>Negative:</strong> Subject + do/does not + base verb</li>
+        <li><strong>Question:</strong> Do/Does + subject + base verb?</li>
+      </ul>
+    </section>
+    <section class="examples">
+      <h2>Examples</h2>
+      <ul>
+        <li>I work every day. <button onclick="playAudio('audio1')">🔊</button></li>
+        <li>She goes to school. <button onclick="playAudio('audio2')">🔊</button></li>
+        <li>Do they play football? <button onclick="playAudio('audio3')">🔊</button></li>
+      </ul>
+      <audio id="audio1" src="audio/work.mp3"></audio>
+      <audio id="audio2" src="audio/goes.mp3"></audio>
+      <audio id="audio3" src="audio/play.mp3"></audio>
+    </section>
+    <section class="exercises">
+      <h2>Practice</h2>
+      <p>Complete the sentence:</p>
+      <form onsubmit="return checkAnswers(event)">
+        <label>He ____ to the gym every day.
+          <input type="text" id="q1" />
+        </label>
+        <button type="submit">Check</button>
+      </form>
+      <p id="feedback"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

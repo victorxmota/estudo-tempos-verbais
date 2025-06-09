@@ -1,19 +1,18 @@
-function speak(text) {
-    const msg = new SpeechSynthesisUtterance();
-    msg.text = text;
-    msg.lang = 'en-GB';
-    window.speechSynthesis.speak(msg);
+
+function playAudio(id) {
+  document.getElementById(id).play();
 }
 
-function checkAnswer(id, correctAnswer) {
-    const userInput = document.getElementById('answer-' + id).value.trim().toLowerCase();
-    const feedback = document.getElementById('feedback-' + id);
-
-    if (userInput === correctAnswer.toLowerCase()) {
-        feedback.textContent = "✅ Correto!";
-        feedback.style.color = "green";
-    } else {
-        feedback.textContent = "❌ A resposta correta é: " + correctAnswer;
-        feedback.style.color = "red";
-    }
+function checkAnswers(event) {
+  event.preventDefault();
+  const answer = document.getElementById('q1').value.trim().toLowerCase();
+  const feedback = document.getElementById('feedback');
+  if (answer === 'goes') {
+    feedback.textContent = 'Correct! ✅';
+    feedback.style.color = 'green';
+  } else {
+    feedback.textContent = 'Try again. ❌';
+    feedback.style.color = 'red';
+  }
+  return false;
 }
